@@ -19,7 +19,7 @@ async function createWindow () {
     title: 'HowGer Macro',
     width: 800,
     height: 600,
-    icon: path.join(__static, 'favicon.jpg'),
+    icon: path.join(__static, 'favicon.png'),
     alwaysOnTop: true,
     autoHideMenuBar: true,
     webPreferences: {

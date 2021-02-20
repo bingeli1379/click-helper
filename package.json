@@ -10,13 +10,15 @@
     "electron:serve": "vue-cli-service electron:serve",
     "lint:style": "stylelint **/*.{css,scss,vue} --fix",
     "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "electron:generate-icons": "electron-icon-builder --input=./public/favicon.png --output=build --flatten"
   },
   "main": "background.js",
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "electron-icon-builder": "^2.0.1",
     "robotjs": "^0.6.0",
     "vue": "^2.6.12",
     "vue-router": "^3.2.0",
