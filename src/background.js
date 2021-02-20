@@ -16,6 +16,7 @@ protocol.registerSchemesAsPrivileged([
 
 async function createWindow () {
   win = new BrowserWindow({
+    title: 'HowGer Macro',
     width: 800,
     height: 600,
     icon: path.join(__static, 'favicon.jpg'),
