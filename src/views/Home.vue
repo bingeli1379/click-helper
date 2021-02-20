@@ -132,8 +132,8 @@ export default {
       this.delay = delay
     },
     updateGroupData (e) {
-      e.preventDefault()
       if (!this.isInputting) return
+      e.preventDefault()
 
       const key = keyTable[e.code]
       if (key === undefined) return
