@@ -4,9 +4,13 @@
       編輯快捷鍵
     </b-button>
 
-    <b-button v-for="item of filterDataList" :key="item.uuid" variant="info" class="w-100 mb-3" @click="trigger(item.macro)">
-      {{ item.name }}
-    </b-button>
+    <b-form-row>
+      <b-col v-for="item of filterDataList" :key="item.uuid" cols="6">
+        <b-button variant="info" class="ellipsis w-100 mb-3" @click="trigger(item.macro)">
+          {{ item.name }}
+        </b-button>
+      </b-col>
+    </b-form-row>
   </div>
 </template>
 
@@ -39,3 +43,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+</style>
